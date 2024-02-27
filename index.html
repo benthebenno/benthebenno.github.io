@@ -11,46 +11,36 @@
     <meta name="description" content="This is the home website for Benjamin Rappoport, CS major at Oberlin College.">
     <link rel="stylesheet" href="style.css">
     <title>Benjamin Rappoport Home Page</title>
+    <!-- This line links to the style page, wich makes things pretty -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
     <style>
-        img {
-            width: 200px;
-            height: 600px;
-            object-fit: cover;
-            border-radius: 50px;
-            float: left;
-            margin-right: 50px;
-        }
-
-        p.Name {
-            font-weight: bold;
-        }
-
-        em {
-            color: red;
-            font-style: italic;
-        }
-
-        h1 {
-            color: aquamarine;
-        }
-
-        ul {
-            /* list-style-type: georgian; */
+        #first {
+            color: pink;
         }
     </style>
-
 
 </head>
 
 <body style="background-color:#33475b"></body>
 
 <body>
+    <div class="product">
+        <h4>Hello EVERYBODY</h4>
+    </div>
     <div class="container">
-        <h1>Welcome to my personal Website!</h1>
+        <h1><mark>Welcome to my personal webpage</mark></h1>
         <h2>Check out some of my Coding Prodjects</h2>
-        <h3><em>Good Vibes</em></h3>
-        <img src="Images\alt_profile.jpg" alt=" A picture of me looking epic">
-        <p class="Name">Me, <strong>Benjamin Rappoport</strong> </p>
+        <h3><em>Baby Girl</em></h3>
+        <p> Published <time datetime="2024-02-24">whenever</time></p>
+        <figure id="img">
+            <img src="Images\alt_profile.jpg" alt=" A picture of me looking epic">
+            <figcaption>
+                Me, <strong> Benjamin Rappoport</strong>
+            </figcaption>
+            <!-- <p class="Name">Me, <strong>Benjamin Rappoport</strong> </p> -->
+        </figure>
         <!-- list stuff
         <ul>
             <li>About me</li>
@@ -64,17 +54,24 @@
             <li>GitHub</li>
             <li>Email</li>
         </ul> -->
-        <a href="about.html">About Me
-            <!-- <img src="Images/wallpaper.jpg" alt="about me" /> -->
-        </a>
-        <p></p>
-        <a href="project_1.html">First prodject </a>
-        <!-- <a href="#">Jump to Top</a> -->
-        <p></p>
-        <a href="https://github.com/benthebenno" target="_blank">My GitHub </a>
-        <p></p>
-        <!-- Needs some work -->
-        <!-- <a href="mailto:ben.rappoport@gmail.com">My Personal Email</a> -->
+        <section id="links">
+            <a href="about.html">About Me
+                <!-- <img src="Images/wallpaper.jpg" alt="about me" /> -->
+            </a>
+            <p></p>
+            <a href="project_1.html">First prodject </a>
+            <!-- <a href="#">Jump to Top</a> -->
+            <p></p>
+            <a href="https://github.com/benthebenno" target="_blank">My GitHub </a>
+            <p></p>
+            <a href="history_research.html">History Research</a> <!-- Needs some work -->
+            <!-- <a href="mailto:ben.rappoport@gmail.com">My Personal Email</a> -->
+            <p></p>
+            <a href="awards_certificates">Awards and Certificates</a>
+            <p id="first"> This is just some info</p>
+
+
+        </section>
 
     </div>
 
