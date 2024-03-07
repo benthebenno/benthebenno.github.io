@@ -21,12 +21,13 @@ em {
     font-style: italic;
 }
 
-h1 {
-    color: aquamarine;
+#title {
+    color: blueviolet;
+    border: 1px rgb(0, 0, 0);
 }
 
 .product {
-    background-color: gold;
+    background-color: teal;
     width: 300px;
 }
 
@@ -35,12 +36,41 @@ h1 {
     width: 500px;
 }
 
-h3 {
-    font: 900;
-}
 
 /* This searches for things that have github and makes it orange */
 a[href*="github"] {
 
     color: orange;
+}
+
+a:visited,
+a:link {
+    color: black;
+}
+
+a:hover,
+a:focus {
+    color: deeppink
+}
+
+
+::selection {
+    background-color: pink;
+}
+
+p::before {
+    content: "...";
+    display: block;
+}
+
+#products {
+    color: green;
+}
+
+.box {
+    width: 800;
+    height: 800px;
+    background: radial-gradient(circle at top right, black, red);
+    box-shadow: 50px;
+    border-radius: 20px;
 }
