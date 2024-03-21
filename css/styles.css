@@ -18,10 +18,10 @@ body {
 }
 
 .title {
-    color: rgb(162, 182, 169);
+    color: rgb(68, 76, 71);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(244, 238, 213);
-    font-size: 10vw;
+    font-size: 7vw;
     border-radius: 10%;
 }
 
@@ -35,6 +35,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(207, 191, 159, 1);
+    /* background: rgb(156, 180, 164); */
+    /* background: linear-gradient(90deg, rgba(156, 180, 164, 1) 20%, rgba(220, 227, 221, 1) 40%, rgba(250, 240, 214, 1) 60%, rgba(216, 201, 174, 1) 80%); */
     height: 5vh;
     width: 90vw;
     border-radius: 20px;
@@ -49,7 +51,7 @@ body {
     width: 20vh;
     height: 70%;
     overflow: hidden;
-
+    object-fit: contain;
 
 }
 
@@ -61,7 +63,7 @@ body {
     width: 100%;
     height: 100%;
     /* color: rgb(162, 182, 169); */
-    color: darkgray;
+    color: rgb(60, 60, 60);
 
 }
 
@@ -71,29 +73,49 @@ body {
 }
 
 a:visited {
-    color: rgb(162, 182, 169);
-    color: darkgray;
+    color: rgb(60, 60, 60);
+
 
 }
 
 .pictureholder {
-    display: flex;
-    flex-direction: column;
-    border: 3px;
+
+    /* border: 3px;
     border-color: black;
-    border-style: solid;
+    border-style: solid; */
     height: 90vh;
     justify-content: center;
-    align-items: flex-start;
+    width: 20vw;
+
+
+}
+
+.about-page {
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
 
 }
 
 .headshot {
-    position: absolute;
-    width: 200px;
-    height: 600px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50px;
     float: left;
+}
 
+.about-description {
+    height: 100%;
+    margin: 30px 15px;
+    border-color: rgb(244, 238, 213);
+    padding: 10px;
+    border-style: solid;
+    width: 60vw;
+    overflow: auto;
+    color: rgb(49, 49, 49);
 }
