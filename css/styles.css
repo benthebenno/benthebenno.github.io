@@ -71,7 +71,6 @@ body {
     text-overflow: ellipsis;
     font-size: 1vw;
     color: rgb(60, 60, 60);
-
 }
 
 .description {
@@ -81,8 +80,6 @@ body {
 
 a:visited {
     color: rgb(60, 60, 60);
-
-
 }
 
 .pictureholder {
