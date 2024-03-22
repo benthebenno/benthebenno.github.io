@@ -19,10 +19,17 @@ body {
 
 .title {
     color: rgb(68, 76, 71);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: .1vw;
     -webkit-text-stroke-color: rgb(244, 238, 213);
     font-size: 7vw;
-    border-radius: 10%;
+}
+
+.subtitle {
+
+    color: red;
+    font-size: 1.5vw;
+    font-weight: 600;
+
 }
 
 .heading {
@@ -48,10 +55,11 @@ body {
     align-items: center;
     background-color: rgb(217, 225, 218);
     border-radius: 25px;
-    width: 20vh;
+    width: 8vw;
     height: 70%;
+    white-space: nowrap;
     overflow: hidden;
-    object-fit: contain;
+    font-size: medium;
 
 }
 
@@ -60,9 +68,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    /* color: rgb(162, 182, 169); */
+    text-overflow: ellipsis;
+    font-size: 1vw;
     color: rgb(60, 60, 60);
 
 }
