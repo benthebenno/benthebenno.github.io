@@ -123,3 +123,35 @@ a:visited {
     overflow: auto;
     color: rgb(49, 49, 49);
 }
+
+.link-sub {
+    width: 15vw;
+}
+
+.project-nav {
+    position: fixed;
+    top: 7%;
+    left: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(207, 191, 159, 1);
+    height: 3vh;
+    width: 70vw;
+    border-radius: 20px;
+}
+
+.no-picture {
+    background: rgb(181, 198, 186);
+    background: linear-gradient(100deg, rgba(181, 198, 186, 1) 0%, rgba(196, 205, 188, 1) 100%);
+}
+
+/* 
+.video-holder {
+    border: 3px;
+    border-color: black;
+    border-style: dashed;
+    width: 20vw;
+    height: 20vh;
+} */
