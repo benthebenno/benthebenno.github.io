@@ -1,7 +1,12 @@
 body {
-    background: url(../Images/64502.jpg);
+    /* background: url(../Images/64502.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: linear-gradient(to right, #000000, #4e4e4e);
+    background-size: 400% 400%;
+    animation: AnimationName 8s ease infinite;
+    margin: 0%;
+    padding: 0%;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -18,9 +23,11 @@ body {
 }
 
 .title {
-    color: rgb(68, 76, 71);
+    /* color: rgb(68, 76, 71); */
+    color: white;
     -webkit-text-stroke-width: .1vw;
-    -webkit-text-stroke-color: rgb(244, 238, 213);
+    /* -webkit-text-stroke-color: rgb(244, 238, 213); */
+    -webkit-text-stroke-color: black;
     font-size: 7vw;
 }
 
@@ -36,16 +43,27 @@ body {
     position: fixed;
     top: 1%;
     left: 5vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(207, 191, 159, 1);
-    /* background: rgb(156, 180, 164); */
-    /* background: linear-gradient(90deg, rgba(156, 180, 164, 1) 20%, rgba(220, 227, 221, 1) 40%, rgba(250, 240, 214, 1) 60%, rgba(216, 201, 174, 1) 80%); */
+    background-color: lightgray;
     height: 5vh;
     width: 90vw;
+    border-radius: 20px;
+}
+
+.project-nav {
+    position: fixed;
+    top: 7%;
+    left: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    height: 3vh;
+    width: 70vw;
     border-radius: 20px;
 }
 
@@ -53,7 +71,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(217, 225, 218);
+    /* background-color: rgb(217, 225, 218); */
+    background: linear-gradient(to right, #000000, #4e4e4e);
+    background-size: 400% 400%;
+    animation: AnimationName 30s ease infinite;
     border-radius: 25px;
     width: 8vw;
     height: 70%;
@@ -70,7 +91,12 @@ body {
     align-items: center;
     text-overflow: ellipsis;
     font-size: 1vw;
-    color: rgb(60, 60, 60);
+    /* color: rgb(60, 60, 60); */
+    color: lightgray
+}
+
+a:visited {
+    color: lightgray;
 }
 
 .description {
@@ -78,9 +104,7 @@ body {
     font-size: 2vw;
 }
 
-a:visited {
-    color: rgb(60, 60, 60);
-}
+
 
 .pictureholder {
 
@@ -128,23 +152,26 @@ a:visited {
     width: 15vw;
 }
 
-.project-nav {
-    position: fixed;
-    top: 7%;
-    left: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgba(207, 191, 159, 1);
-    height: 3vh;
-    width: 70vw;
-    border-radius: 20px;
-}
 
 .no-picture {
-    background: rgb(181, 198, 186);
-    background: linear-gradient(100deg, rgba(181, 198, 186, 1) 0%, rgba(196, 205, 188, 1) 100%);
+    /* background: rgb(181, 198, 186);
+    background: radial-gradient(circle, rgba(181, 198, 186, 1) 0%, rgba(196, 205, 188, 1) 100%); */
+}
+
+
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* 
