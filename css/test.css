@@ -1,0 +1,52 @@
+body {
+    font-family: arial, helvetica, freesans, sans-serif;
+    font-size: 100%;
+    color: #333;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#element2 {
+    width: 12em;
+    font-size: 2em;
+    text-align: center;
+    line-height: 5em;
+    margin: 3em auto;
+    border: 2px solid #666;
+    border-radius: 7px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#element2:before {
+    content: "";
+    position: absolute;
+    width: 500%;
+    height: 500%;
+    top: -250%;
+    left: -250%;
+    z-index: -1;
+    background: url(/Images/union_jack.jpg);
+
+    animation-name: spin;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
