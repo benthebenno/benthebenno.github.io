@@ -9,6 +9,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 400% 400%;
+    background-position: 50% 50%;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 
     animation-name: Title;
     animation-duration: 8s;
@@ -16,15 +22,10 @@ body {
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
-    background-position: 50% 50%;
 
 
     /* animation: AnimationName 8s ease infinite; */
-    margin: 0%;
-    padding: 0%;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
