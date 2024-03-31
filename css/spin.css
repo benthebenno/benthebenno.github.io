@@ -160,6 +160,19 @@ a:visited {
     width: 15vw;
 }
 
+.picture {
+    background: url(/Images/alt_profile.jpg);
+    background-size: contain;
+    width: 30vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 50px;
+    float: left;
+}
+
+
+
+
 @keyframes spin {
     from {
         -webkit-transform: rotate(0deg);

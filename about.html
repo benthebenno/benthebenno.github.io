@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/spin.css">
+    <script>
+        function change(thi) {
+            debugger;
+            thi.setAttribute("src", "/Images/alt2.jpg");
+            thi.innerHTML = "";
+            thi.outerHTML = thi.outerHTML.replace(/button/g, "img");
+        }
+    </script>
 </head>
 
 <body>
@@ -33,44 +41,30 @@
         </div>
         <div class="about-page">
             <div class="pictureholder">
-                <img src="Images/profile_image.jpg" id="headshot" alt="Me, Ben">
-                <button id="myButton">Image 1</button>
-                <!-- <button onclick="changeImage('Images/alt_profile.jpg')">Image 2</button>
-                <button onclick="changeImage('Images/alt2.jpg')">Image 3</button> -->
-                <script>
-                    const myImg = document.getElementById("headshot");
-                    const myButton = document.getElementById("myButton");
+                <!-- <img src="/Images/profile_image.jpg" class="headshot" alt="Me, Ben"> -->
 
-                    let isFirstImage = true;
+                <button class="picture" onclick="change(this)"></button>
+                <div class="about-description">
 
-                    myButton.addEventListener("click", function () {
-                        if (isFirstImage) {
-                            myImg.src = "image2.jpg";
-                        } else {
-                            myImg.src = "image1.jpg";
-                        }
-                        isFirstImage = !isFirstImage;
-                    });
-                </script>
+                    <p>
+                        &nbsp &nbsp &nbspHello, I am Benjamin Rappoport, I amcurrently pursuing a double major in
+                        Computer
+                        Science History at Oberlin College.
+                        I have always loved creating things, from 3d printing to ceramics to knitting, and upon coming
+                        to
+                        college, I discovered Computer Science at the forefront of this creation.
+                        Since coming to college, I have learned numerous languages, including Python, Java, HTML/CSS,
+                        and
+                        Rust.
+                        Currently, I am exploring front-end programs and web development (as you can see from this
+                        website),
+                        though I am attempting to explore as many areas of computer science that I can at the moment.
 
-            </div>
-            <div class="about-description">
+                    </p>
 
-                <p>
-                    &nbsp &nbsp &nbspHello, I am Benjamin Rappoport, I amcurrently pursuing a double major in Computer
-                    Science History at Oberlin College.
-                    I have always loved creating things, from 3d printing to ceramics to knitting, and upon coming to
-                    college, I discovered Computer Science at the forefront of this creation.
-                    Since coming to college, I have learned numerous languages, including Python, Java, HTML/CSS, and
-                    Rust.
-                    Currently, I am exploring front-end programs and web development (as you can see from this website),
-                    though I am attempting to explore as many areas of computer science that I can at the moment.
-
-                </p>
-
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>

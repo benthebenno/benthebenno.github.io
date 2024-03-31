@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/test.css">
+    <title></title>
+    <script>
+        function change(thi) {
+            debugger;
+            thi.setAttribute("src", "/Images/alt2.jpg");
+            thi.innerHTML = "";
+            thi.outerHTML = thi.outerHTML.replace(/button/g, "img");
+        }
+    </script>
 </head>
 
 <body>
-    <h1>Background Image Transformations</h1>
-    <div id="element2">
-        Transformed Background
-        <div class="heading">
-            <div class="linkholder">
-                <a href="index.html" class="link">Home Page</a>
-            </div>
-            <div class="linkholder">
-                <a href="awards_certificates.html" class="link">Awards</a>
-            </div>
-            <div class="linkholder">
-                <a href="about.html" class="link">About Me </a>
-            </div>
-            <div class="linkholder">
-                <a href="personal_projects.html" class="link">Personal Projects</a>
-            </div>
-            <div class="linkholder">
-                <a href="group_projects.html" class="link">Group Projects</a>
-            </div>
-            <div class="linkholder">
-                <a href="history_research.html" class="link">History Major </a>
-            </div>
-        </div>
-    </div>
-
+    <button style="background: url(/Images/profile_image.jpg); height: 50vh; width: 50vw;"
+        onclick="change(this)"></button>
 </body>
 
 </html>
