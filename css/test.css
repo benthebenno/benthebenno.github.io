@@ -23,10 +23,7 @@ h1 {
     background-size: cover;
     background-size: 800% 800%;
     background-position: 50% 50%;
-    /* width: 12em; */
-
     position: relative;
-    /* overflow: hidden; */
 }
 
 #element2::before {
@@ -53,6 +50,21 @@ h1 {
     animation-timing-function: linear;
 
 }
+
+.heading {
+    position: fixed;
+    top: 1%;
+    left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    height: 5vh;
+    width: 90vw;
+    border-radius: 20px;
+}
+
 
 @keyframes spin {
     from {

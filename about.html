@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/spin.css">
 </head>
 
 <body>
-    <h1>Something</h1>
-    <div class="element2">
-        Something
-        <!-- <div class="heading">
+    <div id="element2">
+        <div class="heading">
             <div class="linkholder">
                 <a href="index.html" class="link">Home Page</a>
             </div>
@@ -34,7 +33,26 @@
         </div>
         <div class="about-page">
             <div class="pictureholder">
-                <img src="Images/profile_image.jpg" class="headshot" alt="Me, Ben">
+                <img src="Images/profile_image.jpg" id="headshot" alt="Me, Ben">
+                <button id="myButton">Image 1</button>
+                <!-- <button onclick="changeImage('Images/alt_profile.jpg')">Image 2</button>
+                <button onclick="changeImage('Images/alt2.jpg')">Image 3</button> -->
+                <script>
+                    const myImg = document.getElementById("headshot");
+                    const myButton = document.getElementById("myButton");
+
+                    let isFirstImage = true;
+
+                    myButton.addEventListener("click", function () {
+                        if (isFirstImage) {
+                            myImg.src = "image2.jpg";
+                        } else {
+                            myImg.src = "image1.jpg";
+                        }
+                        isFirstImage = !isFirstImage;
+                    });
+                </script>
+
             </div>
             <div class="about-description">
 
@@ -51,7 +69,7 @@
                 </p>
 
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
 
