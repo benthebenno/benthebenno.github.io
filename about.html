@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/spin.css">
     <script>
         function change(thi) {
-            debugger;
+            // debugger;
             thi.setAttribute("src", "/Images/alt2.jpg");
             thi.innerHTML = "";
             thi.outerHTML = thi.outerHTML.replace(/button/g, "img");
@@ -40,29 +40,25 @@
             </div>
         </div>
         <div class="about-page">
-            <div class="pictureholder">
-                <!-- <img src="/Images/profile_image.jpg" class="headshot" alt="Me, Ben"> -->
 
-                <button class="picture" onclick="change(this)"></button>
-                <div class="about-description">
+            <button class="picture" onclick="change(this)"></button>
+            <div class="about-description">
+                <p>
+                    &nbsp &nbsp &nbspHello, I am Benjamin Rappoport, I amcurrently pursuing a double major in
+                    Computer
+                    Science History at Oberlin College.
+                    I have always loved creating things, from 3d printing to ceramics to knitting, and upon coming
+                    to
+                    college, I discovered Computer Science at the forefront of this creation.
+                    Since coming to college, I have learned numerous languages, including Python, Java, HTML/CSS,
+                    and
+                    Rust.
+                    Currently, I am exploring front-end programs and web development (as you can see from this
+                    website),
+                    though I am attempting to explore as many areas of computer science that I can at the moment.
 
-                    <p>
-                        &nbsp &nbsp &nbspHello, I am Benjamin Rappoport, I amcurrently pursuing a double major in
-                        Computer
-                        Science History at Oberlin College.
-                        I have always loved creating things, from 3d printing to ceramics to knitting, and upon coming
-                        to
-                        college, I discovered Computer Science at the forefront of this creation.
-                        Since coming to college, I have learned numerous languages, including Python, Java, HTML/CSS,
-                        and
-                        Rust.
-                        Currently, I am exploring front-end programs and web development (as you can see from this
-                        website),
-                        though I am attempting to explore as many areas of computer science that I can at the moment.
+                </p>
 
-                    </p>
-
-                </div>
             </div>
         </div>
 </body>

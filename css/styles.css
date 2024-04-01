@@ -86,8 +86,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(217, 225, 218); */
-    background: linear-gradient(to right, #000000, #4e4e4e);
+    background-color: #DD6600;
     background-size: 400% 400%;
     animation: AnimationName 30s ease infinite;
     border-radius: 25px;
@@ -107,11 +106,11 @@ body {
     text-overflow: ellipsis;
     font-size: 1vw;
     /* color: rgb(60, 60, 60); */
-    color: lightgray
+    color: black;
 }
 
 a:visited {
-    color: lightgray;
+    color: black;
 }
 
 .description {
@@ -174,8 +173,12 @@ a:visited {
         background-position: 50% 50%;
     }
 
-    50% {
+    25% {
         background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 0% 50%;
     }
 
     100% {

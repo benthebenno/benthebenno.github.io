@@ -88,13 +88,14 @@ body {
     height: 3vh;
     width: 70vw;
     border-radius: 20px;
+
 }
 
 .linkholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(217, 225, 218);
+    background-color: #DD6600;
     border-radius: 25px;
     width: 8vw;
     height: 70%;
@@ -111,11 +112,11 @@ body {
     align-items: center;
     text-overflow: ellipsis;
     font-size: 1vw;
-    color: lightgray
+    color: black;
 }
 
 a:visited {
-    color: lightgray;
+    color: black;
 }
 
 .description {
@@ -127,33 +128,40 @@ a:visited {
 
 
 .about-page {
+
     position: fixed;
     top: 8%;
     left: 5%;
+    width: 90vw;
+    height: 90vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     font-size: x-large;
 
 }
 
 .headshot {
+
     object-fit: contain;
-    width: 30vw;
+    width: 25vw;
     height: 80vh;
     object-fit: cover;
     border-radius: 50px;
     float: left;
+
 }
 
 .about-description {
-    height: 100%;
-    margin: 30px 15px;
+    height: fit-content;
+    justify-content: flex-end;
     border-color: rgb(244, 238, 213);
-    padding: 10px;
     border-style: solid;
-    width: 60vw;
+    width: 50vw;
     overflow: auto;
     color: lightgray;
+    margin-bottom: 5vw;
 }
 
 .link-sub {
