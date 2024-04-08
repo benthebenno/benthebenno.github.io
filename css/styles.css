@@ -14,12 +14,11 @@ body {
     overflow: hidden;
 
     animation-name: Title;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
-
 
     /* animation: AnimationName 8s ease infinite; */
 
@@ -40,9 +39,9 @@ body {
 .title {
     /* color: rgb(68, 76, 71); */
     color: white;
-    -webkit-text-stroke-width: .1vw;
-    /* -webkit-text-stroke-color: rgb(244, 238, 213); */
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: .1vw; */
+    /* -webkit-text-stroke-color: #DD6600; */
+    /* -webkit-text-stroke-color: black; */
     font-size: 7vw;
 }
 
