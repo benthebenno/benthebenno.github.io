@@ -158,10 +158,12 @@ a:visited {
     justify-content: flex-end;
     border-color: rgb(244, 238, 213);
     border-style: solid;
-    width: 50vw;
+    width: 35vw;
     overflow: auto;
     color: lightgray;
     margin-bottom: 5vw;
+    margin-left: 5vw;
+    padding-left: 5vw;
 }
 
 .link-sub {
@@ -178,6 +180,20 @@ a:visited {
     float: left;
 }
 
+.link-sub {
+    width: 15vw;
+}
+
+.content {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    border-color: rgb(244, 238, 213);
+    border-style: solid;
+
+}
 
 
 
