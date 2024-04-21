@@ -186,15 +186,51 @@ a:visited {
 
 .content {
     position: fixed;
-    top: 10%;
-    left: 10%;
-    width: 80vw;
+    top: 12%;
+    left: 5%;
+    width: 90vw;
     height: 80vh;
     border-color: rgb(244, 238, 213);
     border-style: solid;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
 }
 
+
+.example {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 25vh;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 25vh;
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 25vh;
+}
+
+.example-text {
+    color: aliceblue;
+}
+
+.intro-text {
+    color: aliceblue;
+}
+
+.video-text {
+    color: aliceblue;
+}
 
 
 @keyframes spin {
