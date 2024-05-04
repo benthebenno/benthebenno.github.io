@@ -111,7 +111,18 @@ a:visited {
     border-style: solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+}
+
+.award_box {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 25vh;
+}
+
+.text {
+    color: aliceblue;
 }
 
 @keyframes spin {
