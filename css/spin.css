@@ -178,13 +178,16 @@ a:visited {
 }
 
 .picture {
-    background: url(/Images/alt_profile.jpg);
-    background-size: contain;
-    width: 30vw;
-    height: 80vh;
-    object-fit: cover;
-    border-radius: 50px;
-    float: left;
+    background: url(/Images/proffesh_headshot.jpg);
+    background-size: cover;
+    width: 25vw;
+    height: 70vh;
+    /* object-fit: cover; */
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+    /* float: left; */
+    overflow: hidden;
 }
 
 .link-sub {
