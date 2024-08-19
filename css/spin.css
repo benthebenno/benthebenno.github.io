@@ -200,8 +200,8 @@ a:visited {
     left: 5%;
     width: 90vw;
     height: 80vh;
-    border-color: rgb(244, 238, 213);
-    border-style: solid;
+    /* border-color: rgb(244, 238, 213); */
+    /* border-style: solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -228,19 +228,26 @@ a:visited {
     flex-direction: row;
     width: 90vw;
     height: 25vh;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .example-text {
     color: aliceblue;
+    display: flex;
+    align-items: center;
 }
 
 .intro-text {
     color: aliceblue;
+    display: flex;
+    align-items: center;
 }
 
 .video-text {
     color: aliceblue;
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 
 .video-audio {

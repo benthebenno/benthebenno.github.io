@@ -107,8 +107,8 @@ a:visited {
     left: 5%;
     width: 90vw;
     height: 170vh;
-    border-color: rgb(244, 238, 213);
-    border-style: solid;
+    /* border-color: rgb(244, 238, 213); */
+    /* border-style: solid; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -123,6 +123,13 @@ a:visited {
 
 .text {
     color: aliceblue;
+}
+
+.image {
+    border-color: #DD6600;
+    border-style: solid;
+    width: 30vw;
+    height: 25vh;
 }
 
 @keyframes spin {
