@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
-
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 export const COLORS = {
   dark: "#914F1E",
   clay: "#DEAC80",
@@ -50,8 +51,12 @@ export const PROJECTS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: FaGithub, href: "https://github.com/benthebenno", label: "GitHub" },
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/in/benjamin-rappoport-70baa426b/",
+    label: "LinkedIn",
+  },
+  // { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Mail, href: "ben.rappoport@gmail.com", label: "Email" },
 ];

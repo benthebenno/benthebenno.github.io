@@ -1,20 +1,24 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { PROJECTS } from '../constants';
-import { ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { PROJECTS } from "../constants";
+import { ExternalLink } from "lucide-react";
 
 const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-32 px-4 md:px-12 bg-brand-sand">
       <div className="max-w-6xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-6xl font-serif font-bold text-brand-dark mb-4">Selected Works</h2>
-          <p className="text-brand-dark/60">A curation of my recent digital endeavors</p>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-brand-dark mb-4">
+            Past Experiences
+          </h2>
+          <p className="text-brand-dark/60">
+            A curation of my recent digital endeavors
+          </p>
         </motion.div>
 
         <div className="space-y-32">
@@ -25,15 +29,17 @@ const Projects: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-center`}
+              className={`flex flex-col ${
+                index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
+              } gap-12 items-center`}
             >
               {/* Image Side */}
               <div className="w-full md:w-3/5 group cursor-pointer relative">
                 <div className="absolute inset-0 bg-brand-clay rounded-2xl transform translate-x-3 translate-y-3 transition-transform group-hover:translate-x-5 group-hover:translate-y-5"></div>
                 <div className="relative rounded-2xl overflow-hidden border-2 border-brand-dark aspect-video">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
@@ -49,8 +55,11 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-brand-sage/50 text-brand-dark text-sm font-semibold rounded-full border border-brand-dark/10">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-brand-sage/50 text-brand-dark text-sm font-semibold rounded-full border border-brand-dark/10"
+                    >
                       {tag}
                     </span>
                   ))}

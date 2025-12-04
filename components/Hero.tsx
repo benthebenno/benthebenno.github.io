@@ -93,15 +93,15 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-l md:text-2xl text-brand-dark/80 max-w-lg font-sans font-light"
+          className="text-l md:text-2xl text-brand-dark font-sans font-light"
         >
-          Building digital experiences that blend{" "}
+          Turning{" "}
           <span className="text-brand-dark font-bold border-b-2 border-brand-sage">
-            functionality
+            historical
           </span>{" "}
-          with{" "}
+          insight into modern{" "}
           <span className="text-brand-dark font-bold border-b-2 border-brand-sage">
-            aesthetics
+            software
           </span>
           .
         </motion.p>
